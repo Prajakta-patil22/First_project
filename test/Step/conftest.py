@@ -4,7 +4,7 @@ from selenium import webdriver
 @pytest.fixture()
 def browser():
     driver = webdriver.Chrome()
-    driver.get("https://rahulshettyacademy.com/")  # get method to hit url on  browser
     driver.maximize_window()
-    yield
+    driver.get("https://www.hirist.tech/")
+    yield driver  # Return the driver for use in tests
     driver.quit()
