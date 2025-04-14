@@ -4,7 +4,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class BrowserUtility:
 
-    @staticmethod
     def click(driver, element):
         wait = WebDriverWait(driver, 30)
         wait.until(EC.visibility_of_element_located(element))
@@ -13,7 +12,6 @@ class BrowserUtility:
         driver.execute_script("arguments[0].scrollIntoView();", m)
         driver.find_element(*element).click()
 
-    @staticmethod
     def enter_text(driver, element, text):
         field = driver.find_element(*element)
         field.clear()
