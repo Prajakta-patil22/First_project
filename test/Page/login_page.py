@@ -18,7 +18,7 @@ class LoginPage:
 
     def enter_email(browser):
         element = LoginLocator.email_id
-        text = "prajakta1998patil@gmail.com"
+        text = "Test@gmail.com"
         BrowserUtility.enter_text(browser, element, text)
 
     def enter_password(browser):
