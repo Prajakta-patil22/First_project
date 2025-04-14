@@ -23,7 +23,7 @@ class LoginPage:
 
     def enter_password(browser):
         element = LoginLocator.password
-        text = "Stat2020$"
+        text = "test"
         BrowserUtility.enter_text(browser, element, text)
 
     def click_signin_btn(browser):
